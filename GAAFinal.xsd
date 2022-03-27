@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.gaa.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="finals" type="gaa:finalsType" xmlns:gaa="http://www.gaa.com"/>
+  <xs:complexType name="finalType">
+    <xs:sequence>
+      <xs:element name="winner">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Offaly"/>
+            <xs:enumeration value="Cavan"/>
+            <xs:enumeration value="Dublin"/>
+            <xs:enumeration value="Cork"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="runnerUp">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Kerry"/>
+            <xs:enumeration value="Cork"/>
+            <xs:enumeration value="Meath"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="winningScore">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1-15"/>
+            <xs:enumeration value="2-11"/>
+            <xs:enumeration value="1-11"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="referee">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="PJ.McGrath"/>
+            <xs:enumeration value="P.Kelly"/>
+            <xs:enumeration value="J.Fitzgerald"/>
+            <xs:enumeration value="P.Russell"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="topScorer" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="M.Connor"/>
+            <xs:enumeration value="T.Spillane"/>
+            <xs:enumeration value="J.O'Reilly"/>
+            <xs:enumeration value="M.Higgins"/>
+            <xs:enumeration value="J.Grace"/>
+            <xs:enumeration value="J.Barry"/>
+            <xs:enumeration value="D.Walsh"/>
+            <xs:enumeration value="M.Lyons"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="attendance">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="62,309"/>
+            <xs:enumeration value="34,491"/>
+            <xs:enumeration value="8,000"/>
+            <xs:enumeration value="65,723"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="venue" use="optional"/>
+    <xs:attribute type="xs:string" name="year" use="optional"/>
+    <xs:attribute type="xs:string" name="replay" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="finalsType">
+    <xs:sequence>
+      <xs:element type="gaa:finalType" name="final" maxOccurs="unbounded" minOccurs="0" xmlns:gaa="http://www.gaa.com"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

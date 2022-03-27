@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<finals  xmlns ="http://www.gaa.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.gaa.com GAAFinal.xsd" >
+    
+    <final venue="Croke Park" year="1982" replay="false" >
+        <winner>Offaly</winner>
+        <runnerUp>Kerry</runnerUp>
+        <winningScore>1-15</winningScore>
+        <referee>PJ.McGrath</referee>
+        <topScorer>M.Connor</topScorer>
+        <topScorer>T.Spillane</topScorer>
+        <attendance>62,309</attendance>   
+    </final>
+    <final venue="New York" year="1947" replay="false" >
+        <winner>Cavan</winner>
+        <runnerUp>Kerry</runnerUp>
+        <winningScore>2-11</winningScore>
+        <referee>P.Kelly</referee>
+        <topScorer>J.O'Reilly</topScorer>
+        <topScorer>M.Higgins</topScorer>
+        <attendance>34,491</attendance>      
+    </final>   
+    <final venue="Athy" year="1906" replay="false" >
+        <winner>Dublin</winner>
+        <runnerUp>Cork</runnerUp>
+        <winningScore>1-15</winningScore>
+        <referee>J.Fitzgerald</referee>
+        <topScorer>J.Grace</topScorer>
+        <topScorer>J.Barry</topScorer>
+        <attendance>8,000</attendance>      
+    </final>
+    <final venue="Croke Park" year="1990" replay="false">
+        <winner>Cork</winner>
+        <runnerUp>Meath</runnerUp>
+        <winningScore>1-11</winningScore>
+        <referee>P.Russell</referee>
+        <topScorer>D.Walsh</topScorer>
+        <topScorer>M.Lyons</topScorer>  
+        <attendance>65,723</attendance>    
+    </final> 
+</finals>
+
